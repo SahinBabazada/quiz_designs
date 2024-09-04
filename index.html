@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Quiz System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>Advanced Quiz System</h1>
+
+        <!-- Admin Interface -->
+        <div id="adminInterface">
+            <h2>Create Your Quiz</h2>
+
+
+            <!-- Dynamic Questions Area -->
+            <div id="questionsContainer"></div>
+
+            <!-- Button to Add New Question -->
+            <div class="add-question-section">
+                <button class="add-question-btn" onclick="addQuestion('choice')">Add Choice Question</button>
+                <button class="add-question-btn" onclick="addQuestion('fillgap')">Add Fill-in-the-Blank
+                    Question</button>
+                <button class="add-question-btn" onclick="addQuestion('categorize')">Add Categorize Question</button>
+                <button class="add-question-btn" onclick="addQuestion('reorder')">Add Reorder Question</button>
+                <!-- New button -->
+            </div>
+
+
+
+            <!-- Save Quiz Button -->
+            <div class="save-quiz-container">
+                <button class="save-quiz-btn" onclick="saveQuiz()">Save Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
